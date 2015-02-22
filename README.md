@@ -29,7 +29,7 @@ Or install it yourself as:
 
 ## Usage
 
-Add some metadata about your API and then execute the `generate` method on the `GrapeSlate::Blueprint` class.
+Add some metadata about your API and then execute the `generate` method on the `GrapeSlate::Document` class.
 
 ### Configuration
 
@@ -65,8 +65,8 @@ GrapeSlate.config.response_headers = [
 ### Generation
 
 ```ruby
-# supply the class you'd like to document and generate your blueprint
-GrapeSlate::Blueprint.new(AwesomeAPI).generate
+# supply the class you'd like to document and generate your swagger documentation
+GrapeSlate::Document.new(AwesomeAPI).generate
 ```
 
 ## TODO
@@ -77,7 +77,7 @@ GrapeSlate::Blueprint.new(AwesomeAPI).generate
 * Add option to change or remove the sample id field (eg. `_id` vs `id`)
 * What if someone does not use JSON?!?
 * ~~Create sample response for list endpoints (array)~~
-* Add support for writing the blueprint to disk
+* Add support for writing the document to disk
 * Add an option to include root in json
 
 ## Contributing
